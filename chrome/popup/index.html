@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplainIt (AI Explainer)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Explain It</h1>
+        
+        <div id="api-key-section">
+            <input type="password" id="api_key_input" placeholder="Enter GROQ API Key">
+            <button id="save_api_key_button">Save Key</button>
+        </div>
+        
+        <div id="popup-content" class="hidden">
+            <div class="text-section">
+                <h2>Highlighted Text</h2>
+                <p id="highlighted_text" class="text-content"></p>
+            </div>
+            <div class="text-section">
+                <h2>Explanation</h2>
+                <p id="explained_text" class="text-content"></p>
+            </div>
+            <div id="action-buttons">
+                <button id="copy_button">Copy</button>
+                <button id="save_button">Save</button>
+                <button id="clear_button">Clear</button>
+            </div>
+        </div>
+        
+        <div id="error-content" class="hidden">
+            <p>Highlight text and press <strong>Ctrl+Shift+E</strong> to explain it.</p>
+        </div>
+        
+        <div id="settings-button">
+            <button id="open_settings">Settings</button>
+        </div>
+        
+        <div id="saved-explanations-button" class="hidden">
+            <button id="view_saved">View Saved Explanations</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

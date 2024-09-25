@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplainIt - Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ExplainIt - Settings</h1>
+        
+        <div class="section">
+            <h2>General Settings</h2>
+            
+            <div class="option">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark Mode</span>
+            </div>
+            
+            <div class="option">
+                <label for="defaultStyle">Default Explanation Style:</label>
+                <select id="defaultStyle">
+                    <option value="default">Default</option>
+                    <option value="eli5">ELI5 (Explain Like I'm 5)</option>
+                    <option value="technical">Technical</option>
+                    <option value="analogy">Analogy-based</option>
+                    <option value="academic">Academic</option>
+                    <option value="storytelling">Storytelling</option>
+                    <option value="historical">Historical Context</option>
+                    <option value="pros_cons">Pros and Cons</option>
+                    <option value="socratic">Socratic Method</option>
+                    <option value="eli15">ELI15 (Explain Like I'm 15)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>API Settings</h2>
+            
+            <div class="option">
+                <label for="apiKey">GROQ API Key:</label>
+                <input type="password" id="apiKey" placeholder="Enter your GROQ API key">
+            </div>
+            
+            <button id="saveApiKey">Save API Key</button>
+        </div>
+        
+        <div class="section">
+            <h2>Saved Explanations</h2>
+            <button id="viewSavedExplanations">View Saved Explanations</button>
+        </div>
+    </div>
+    
+    <script src="options.js"></script>
+</body>
+</html>
