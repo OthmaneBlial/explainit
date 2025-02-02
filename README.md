@@ -1,5 +1,6 @@
 # ExplainIt: AI-Powered Text Explainer
 
+
 ## Description
 ExplainIt is a browser extension that brings instant clarity to complex text across the web. With a simple highlight and keyboard shortcut, get AI-generated explanations for any selected text, making web browsing more informative and accessible.
 
